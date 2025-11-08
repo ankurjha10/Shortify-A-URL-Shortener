@@ -26,7 +26,7 @@ const Home = () => {
     setIsLoading(true);
     try {
       const response = await API.post(
-        `/url/shortUrl?originalUrl=${encodeURIComponent(originalUrl)}`
+        `/shortUrl?originalUrl=${encodeURIComponent(originalUrl)}`
       );
       setShortUrl(response.data.shortURL || response.data.shortUrl || response.data);
       toast({

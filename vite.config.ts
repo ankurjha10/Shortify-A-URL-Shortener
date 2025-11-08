@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
     port: 5000,
     proxy: {
       // forward requests starting with /url to the Spring Boot backend
-      "/url": {
+      "/": {
         target: "http://localhost:8080",
         changeOrigin: true,
         secure: false,
