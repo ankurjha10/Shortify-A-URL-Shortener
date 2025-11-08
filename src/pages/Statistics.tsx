@@ -31,7 +31,7 @@ const Statistics = () => {
 
     setIsLoading(true);
     try {
-      const response = await API.get(`/stats?shortCode=${shortCode}`);
+      const response = await API.get(`/stats/${shortCode}`);
       setStats(response.data);
     } catch (error) {
       toast({
