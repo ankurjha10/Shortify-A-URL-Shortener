@@ -48,7 +48,6 @@ const Statistics = () => {
   return (
     <div className="min-h-screen bg-gradient-background flex flex-col">
       <div className="container mx-auto px-4 py-12 flex-1">
-        {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -73,7 +72,6 @@ const Statistics = () => {
           </p>
         </motion.div>
 
-        {/* Search Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -110,7 +108,6 @@ const Statistics = () => {
           </div>
         </motion.div>
 
-        {/* Stats Display */}
         {stats && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -169,7 +166,6 @@ const Statistics = () => {
           </motion.div>
         )}
 
-        {/* Empty State */}
         {!stats && !isLoading && (
           <motion.div
             initial={{ opacity: 0 }}

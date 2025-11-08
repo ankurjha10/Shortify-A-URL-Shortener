@@ -59,7 +59,6 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-background flex flex-col">
       <div className="container mx-auto px-4 py-12 flex-1">
-        {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -85,7 +84,6 @@ const Home = () => {
           </motion.p>
         </motion.div>
 
-        {/* Stats Cards */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -109,7 +107,6 @@ const Home = () => {
           </div>
         </motion.div>
 
-        {/* URL Shortener Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -173,7 +170,6 @@ const Home = () => {
           </div>
         </motion.div>
 
-        {/* Features Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
